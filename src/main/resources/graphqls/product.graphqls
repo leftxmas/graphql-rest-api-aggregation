@@ -1,0 +1,29 @@
+type Product {
+    sku: String
+    stock: [Inventory!]!
+    purchaseOrders: [PurchaseOrder!]!
+    salesOrders: [SalesOrder!]!
+}
+
+type Inventory {
+    location: String
+    qtyAvailable: Int
+}
+
+type PurchaseOrder {
+    orderDate: String
+    shipDate: String
+    qty: Int
+}
+
+type SalesOrder {
+    item: Product!
+    qty: Int
+    unitPrice: Float
+    totalAmount: Float
+    discount: Int
+}
+
+type Query {
+    findProduct(sku:String): Product
+}
