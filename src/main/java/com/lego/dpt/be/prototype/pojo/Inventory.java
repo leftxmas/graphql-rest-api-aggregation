@@ -2,11 +2,14 @@ package com.lego.dpt.be.prototype.pojo;
 
 public class Inventory {
 
-    private final String sku;
+    private String sku;
 
-    private final String location;
+    private String location;
 
-    private final int qty;
+    private int qty;
+
+    public Inventory() {
+    }
 
     public Inventory(String sku, String location, int qty) {
         this.sku = sku;

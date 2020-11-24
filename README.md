@@ -15,3 +15,21 @@ To run the application, please rune the command below:
 ```
 mvn clean spring-boot:run
 ```
+
+After launching the app, go to [http://localhost:8080/graphiql](http://localhost:8080/graphiql). Run a sample query like below:
+```$json
+{
+  findProduct(sku: "12345") {
+    sku
+    stock {
+      location
+      qtyAvailable
+    }
+    salesOrders {
+      qty
+      totalAmount
+    }
+  }
+}
+
+```
