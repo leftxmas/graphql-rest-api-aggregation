@@ -1,6 +1,6 @@
 # Aggregate RESTful endpoints with GraphQL
  
-This is a prototype based on a blog post published by Raymond Lee at https://raymondhlee.wordpress.com/author/raymondhlee/. 
+This is a prototype based on a blog post published by Raymond Lee at https://raymondhlee.wordpress.com/author/raymondhlee/. This prototype is free to use but I reserve the copyright as Raymond doesn't provide full source codes and it did take me quite a bit of time to get the application working. 
  
 ## Tech stack
 - Spring Boot
